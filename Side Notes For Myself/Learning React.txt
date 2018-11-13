@@ -46,3 +46,8 @@ return (
     )
 }
 ReactDOM.render (<App/>,document.querySelector('#root'));
+
+
+React Is All About Importing And Exporting Files To Your Main Files (index.js And index.html).
+We Need To Make A Structure Whenther On A Paper Or A Sketch In Our Mind Before We Create A Project.
+Every React Page Is Made Of Components And Each Part Of The Page Is A Separate Component. So We Can Say That A Page Is Made Of Several Components.
