@@ -8,15 +8,8 @@ import ReactDOM from "react-dom";
 // This Function Will Return A H1 Tag With The Hellow World To Our Page
 
 const App = () => {
-  //If We Have Only One Element The Below Code Will Work But If We Have More Than One Elements It Won't Work So We Need To Change It A Little Bit.
-  //return <h1> Hello World !!! </h1>
-
-  return (
-    <div ClassName="newElement">
-      <h1> Hello Wordld !!! </h1>
-      <div> Welecome To React </div>
-    </div>
-  );
+  //If We Have Only One Element The Below Code Will Work
+  return <h1> Hello World !!! </h1>;
 };
 
 // Compiling And Rendering The Code And Displaying It In Our Div With The Id Of root In Our Index.html Page In Our Public Folder
