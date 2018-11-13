@@ -26,7 +26,9 @@ return (
 
   //Creating New Component Which Is Header For Our News Application.
   
-  
+  <div>
+    
+  </div>
   )
 
 }
