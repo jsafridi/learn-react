@@ -4,6 +4,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// Importing Components Which We Created
+
+import Header from './components/header.js'
+
 // Creating A Function (ES6 Format) And Assigning It To A Constant
 // This Function Will Return A H1 Tag With The Hellow World To Our Page
 
@@ -27,7 +31,7 @@ return (
   //Creating New Component Which Is Header For Our News Application.
   
   <div>
-    
+    <Header/>
   </div>
   )
 

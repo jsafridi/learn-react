@@ -53,3 +53,20 @@ We Need To Make A Structure Whenther On A Paper Or A Sketch In Our Mind Before W
 Every React Page Is Made Of Components And Each Part Of The Page Is A Separate Component. So We Can Say That A Page Is Made Of Several Components.
 
 You Need To Create A Folder For Your Components Which You Will Create In Your Src Folder By The Name Of Components Or components. It Will Have All The Components That You Need In Your Page Or Project.
+
+In Order For A Component Or Components To Be Available To Other We Need To Export Them And The Code For That Export Is
+export default (The Name Of The Component In Our Care It's Header)
+
+Code
+export default Header; 
+
+We Need To Write This Code In Our Main Component File Which We Want To Be Available Or Export.
+
+The Same Process Will Repeate For All Other Components.
+
+Also We Need To Import Them All To Our Main File Whcih In Our Case Is index.js And The Code For That Is 
+
+import (component Name) from '(Component Path)'.
+
+Code
+import Header from './components/header';

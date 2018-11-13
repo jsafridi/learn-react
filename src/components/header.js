@@ -4,6 +4,7 @@ import React from 'react';
 
 const Header = () => {
     return 
-        <div>Header</div>
-    
+    <div><h1>Hello World</h1></div>
 }
+
+export default Header;
