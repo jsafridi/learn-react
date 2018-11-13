@@ -1,0 +1,48 @@
+You May Have Tens Of Hundred Of Javascript Files When You Create Your React Project Or App But When You Complile It Using Babel And Webpack It Will Give You A Couple Of Files Or May Be Three Or Four Files. One Should Be Index.html And The Other One Should Be bundle.js. Webpack And Babel Budles All The Javascript Files In One Single Javascript File Called Bundle.js 
+
+Now We Will Work From Scratch.
+ Delete All The Files From Public Folder Except index.html.
+Delete All The Files From Src Folder Except index.js For A Clean Start.
+
+
+First Of All We Need To Import React To Our Page And Then ReactDOM Also To Our Page.
+
+Then We Need To Define A Constant With Any Name We Want As A Fat Arrow Function (In This Case const App = () => ).
+
+Now We Have A Function  Which We Have Assignet To A Constant App. 
+
+
+const App = () =>{
+return <h1> Hello Wordld !!! </h1>
+}
+
+React Needs A Render Method To Render And Compile Things. It Needs Two Arguments, First The Name OF The Constant Or Variable That Has A Function Assigned (App In Our Case) And Then Place On Your Index.html Whenre You Want To Show Or Display The Result.
+
+Here Is The Complete Code Of Our First Component
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+const App = () =>{
+return <h1> Hello Wordld !!! </h1>
+}
+ReactDOM.render (<App/>,document.querySelector('#root'));
+
+
+The Above Code Will Work Because We Only Have One Element Which Is A Heading Tag, But When We Want To Put Anthoer Tag Or Div It Won't Work, That's Because React Can Only Return One Element Which Can Be Anything And We Call It A Base Or Root Element. 
+
+Inorder To Work Properly We Need To Wrap Everything In A Root Or Base Or Parent Element (div) In Our Case. So For The Above Code To Work Properly We Need To Change Our Code A Little Bit.
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+const App = () =>{
+return (
+    <div ClassName = "newElement">
+    <h1> Hello Wordld !!! </h1>
+    <div> Welecome To React </div>
+    </div>
+    )
+}
+ReactDOM.render (<App/>,document.querySelector('#root'));

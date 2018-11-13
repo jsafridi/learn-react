@@ -1,0 +1,10 @@
+In The Name Of Allah (SWT) The Most Merciful And Creator Of All Universe.
+
+
+1: First Install Node Js From Their Site nodejs.org
+2: Create A Folder Whereever You Want In Your Computer That Will Be Your Project Folder.
+3: Open Your Terminal Inside That Folder And Type npm install -g create-react-app And Hit Enter
+4: Wait For The Process To Complete
+5 Inside The Same Folder Opne The Terminal Again And Type create-react-app . (create-react-app(SPACE) DOT) And Wait For The Process To Finish This Will Create A Boiler Plate Of A React Project In That Same Folder Because Of The DOT. When Everything Finishes
+6: Type npm start This Will Start Your Server In Your Browser And You Will See A Page In Your Browser With A Spinning React Logo.
+You Are Done Congrats You Just Create Your First React Project :) 
