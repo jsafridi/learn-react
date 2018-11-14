@@ -11,6 +11,6 @@ const Header = () => {
       getYear()};
       </div>
   )
-}
+  }
 
 export default Header;
