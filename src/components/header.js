@@ -1,11 +1,32 @@
 // Importing React From react (Node Modules)
 
-import React from "react";
-const Header = () => {
-  return( <div>
-        Header
-      </div>
-  )
-  }
+//import React from "react";
+
+// Destructuring And Creating Classes.
+// Pure ES6 Style Conding.
+
+import React,{ Component } from 'react';
+
+//Creating Header Class
+
+class Header extends Component{
+
+//Render Method Which Is Mendatory
+
+    render(){
+
+// Old Return Method With A Base Header Tag And Children Logo And Input Divs
+
+        return (
+            <header>
+                <div>
+                    Logo
+                </div>
+                <div><input type="text"/>
+                </div>
+            </header>
+        )
+    }
+}
 
 export default Header;
