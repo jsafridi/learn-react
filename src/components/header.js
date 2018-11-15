@@ -7,6 +7,9 @@
 
 import React,{ Component } from 'react';
 
+// Importing CSS
+import '../css/styles.css';
+
 //Creating Header Class
 
 class Header extends Component{
@@ -19,7 +22,7 @@ class Header extends Component{
 
         return (
             <header>
-                <div>
+                <div className="logo">
                     Logo
                 </div>
                 <div><input type="text"/>
