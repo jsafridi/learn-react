@@ -14,6 +14,12 @@ import '../css/styles.css';
 
 class Header extends Component{
 
+//Event Handlers
+
+inputChangeHandler(event){
+    console.log(event.target.value)
+}
+
 //Render Method Which Is Mendatory
 
     render(){
@@ -25,7 +31,9 @@ class Header extends Component{
                 <div className="logo">
                     Logo
                 </div>
-                <div><input type="text"/>
+                <div><input type="text"
+                onChange = { (e) => this.inputChangeHandler(e)}
+                />
                 </div>
             </header>
         )
