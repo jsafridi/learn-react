@@ -75,3 +75,6 @@ import Header from './components/header';
 When You Add A Css File You Need To Put It In The Source Folder And Provide It's Full Path It's Not The Node Module Nor A Javascript File So You Should Provide Full Path.
 
 Event Handler Works It Works In Javascript.... But Remember React's Formate Is ES6.
+
+
+In ES6 Classes Are Very Very Important Because We Create One Class And Then We Extend That Class To Include It In Other Parts Of Our Project, This Way We Don't Need To Create Too Many Classes And It Saves Us A Lot Of Time And Coding.  When We Create A Constructor Class And Extends It In Another Class And Then Want To Add Something More In That New Class We Will Need A Method Super() To Work Otherwise Without This Super() Method It Won't Work And Will Give Us Errors.
