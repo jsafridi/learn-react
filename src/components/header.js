@@ -7,6 +7,8 @@
 
 import React,{ Component } from 'react';
 
+
+
 // Importing CSS
 import '../css/styles.css';
 
@@ -14,25 +16,41 @@ import '../css/styles.css';
 
 class Header extends Component{
 
+// Creating State
+    state = {
+        keywords:'Hello World.'
+    }
+
 //Event Handlers
 
 inputChangeHandler(event){
-    console.log(event.target.value)
+   // console.log(event.target.value)
+   this.setState({
+       keywords: event.target.value
+   })
 }
 
 //Render Method Which Is Mendatory
 
     render(){
 
-// Old Return Method With A Base Header Tag And Children Logo And Input Divs
+// Consoling The Result
+
+console.log(this.state.keywords)
+
+// Old Return Method With A Base Tag And Children Logo And Input Divs
 
         return (
+            
             <header>
                 <div className="logo">
                     Logo
                 </div>
                 <div><input type="text"
-                onChange = { (e) => this.inputChangeHandler(e)}
+
+// Changing The Old OnChange Event Handler To New State Pure React.  
+              
+                onChange = {this.inputChangeHandler.bind(this)}
                 />
                 </div>
             </header>

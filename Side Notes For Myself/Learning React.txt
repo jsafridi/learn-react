@@ -78,3 +78,16 @@ Event Handler Works It Works In Javascript.... But Remember React's Formate Is E
 
 
 In ES6 Classes Are Very Very Important Because We Create One Class And Then We Extend That Class To Include It In Other Parts Of Our Project, This Way We Don't Need To Create Too Many Classes And It Saves Us A Lot Of Time And Coding.  When We Create A Constructor Class And Extends It In Another Class And Then Want To Add Something More In That New Class We Will Need A Method Super() To Work Otherwise Without This Super() Method It Won't Work And Will Give Us Errors.
+
+
+STATES IN REACT.
+
+States In React Are Like Database, It Stores Inofrmation And It Changes All The Behaviours Of Our App. It Is Very Important To Understand States In React Because It Controll Almost Everything In Our React App.
+
+
+It's An Object That Serves Like A Database, We Can Store Events And Can Control Our App How To Behave Through State.
+
+When We Create A Class Base Component React Gives Us A State By default, But If We Create A Functional Base Component React Doesn't Give Us State By Default They Are Called Stateless Components.
+
+When We Change State Or A User Change It WIth Values React Automatically ReRender The Application And Display Or Store The New Values, That's The Main Difference Between A Stae ANd An Object. 
+State Behaves Like The Main Actor Who's Responsible Of All The Changes And Events (Sofar I Know This Much About States).
