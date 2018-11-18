@@ -90,4 +90,7 @@ It's An Object That Serves Like A Database, We Can Store Events And Can Control 
 When We Create A Class Base Component React Gives Us A State By default, But If We Create A Functional Base Component React Doesn't Give Us State By Default They Are Called Stateless Components.
 
 When We Change State Or A User Change It WIth Values React Automatically ReRender The Application And Display Or Store The New Values, That's The Main Difference Between A Stae ANd An Object. 
-State Behaves Like The Main Actor Who's Responsible Of All The Changes And Events (Sofar I Know This Much About States).
+
+State Behaves Like The Main Actor Who's Responsible Of All The Changes And Events (Sofar I Know This Much About States). We Use Bind(this) In React To Tell Our App That We Need That Specific Event Or State To Render Not The Whole Function That Holds That State Or Event. 
+
+But IF We Don't Want To Use bind(this) Which Is An Old Method We Can Use A Fat Arrow Function Which Is Smart Enough To Know What We Want To Do. So Use Fat Arrow Function Instead Of bind(this).

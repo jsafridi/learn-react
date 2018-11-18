@@ -23,11 +23,11 @@ class Header extends Component{
 
 //Event Handlers
 
-inputChangeHandler(event){
+inputChangeHandler = (event) => {
    // console.log(event.target.value)
    this.setState({
        keywords: event.target.value
-   })
+   });
 }
 
 //Render Method Which Is Mendatory
@@ -50,7 +50,7 @@ console.log(this.state.keywords)
 
 // Changing The Old OnChange Event Handler To New State Pure React.  
               
-                onChange = {this.inputChangeHandler.bind(this)}
+                onChange = {this.inputChangeHandler}
                 />
                 </div>
             </header>
