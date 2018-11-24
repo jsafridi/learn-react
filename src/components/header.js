@@ -18,7 +18,7 @@ class Header extends Component{
 
 // Creating State
     state = {
-        keywords:'Hello World.'
+        Message:'Hello World.'
     }
 
 //Event Handlers
@@ -26,7 +26,7 @@ class Header extends Component{
 inputChangeHandler = (event) => {
    // console.log(event.target.value)
    this.setState({
-       keywords: event.target.value
+       Message: event.target.value
    });
 }
 
@@ -36,7 +36,7 @@ inputChangeHandler = (event) => {
 
 // Consoling The Result
 
-console.log(this.state.keywords)
+console.log(this.state.Message)
 
 // Old Return Method With A Base Tag And Children Logo And Input Divs
 
