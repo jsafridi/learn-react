@@ -18,7 +18,7 @@ class Header extends Component{
 
 // Creating State
     state = {
-        Message:'Hello World.'
+        Message:'I Love React.'
     }
 
 //Event Handlers
@@ -36,7 +36,7 @@ inputChangeHandler = (event) => {
 
 // Consoling The Result
 
-console.log(this.state.Message)
+//console.log(this.state.Message)
 
 // Old Return Method With A Base Tag And Children Logo And Input Divs
 
