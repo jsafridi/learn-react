@@ -46,11 +46,14 @@ const NewsItem =({item}) => {
 
 
     return(
-     <div {...news_item} {...news_background}>
+    <div className={`${news_item} ${news_background}`}>
+
       <h3> {item.title}</h3>
       <div> {item.feed}
        </div>
-        </div>
+    </div>
+      
+        
       )
 }
 
