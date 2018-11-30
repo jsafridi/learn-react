@@ -1,16 +1,17 @@
 import React from 'react';
+import NewsItem from './news_list_item';
 
 const NewsList = (props) =>{
-    
+
 // Creating A Variable Called items It Will Loop Through All The Information We Get From props.news.
 
    const items = props.news.map((item) => {
     return(
-        <div>
-     <h3> {item.title}</h3>
-     <div> {item.feed}
-        </div>
-        </div>
+//<NewsItem item={item}/>
+
+// Commented Out The Old Item And Giving It An Id To Eleminate The Error We Are Getting In Browser Dev Tools.
+
+<NewsItem key = {item.id} item = {item} /> 
 )
 });
 
