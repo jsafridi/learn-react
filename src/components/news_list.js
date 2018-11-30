@@ -14,13 +14,7 @@ const NewsList = (props) =>{
 <NewsItem key = {item.id} item = {item} /> 
 )
 });
-
-
-
     return(
-
-
-
 
 // Comment Out The Old Div With {props.news} To Create A New Div For Our Map Function (Loop).
 
@@ -29,7 +23,7 @@ const NewsList = (props) =>{
 
 
 
-    // Creating A Div With Items For Our Map Function
+// Creating A Div With Items For Our Map Function
 
     <div>
         {items}
