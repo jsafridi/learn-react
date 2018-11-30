@@ -94,3 +94,8 @@ When We Change State Or A User Change It WIth Values React Automatically ReRende
 State Behaves Like The Main Actor Who's Responsible Of All The Changes And Events (Sofar I Know This Much About States). We Use Bind(this) In React To Tell Our App That We Need That Specific Event Or State To Render Not The Whole Function That Holds That State Or Event. 
 
 But IF We Don't Want To Use bind(this) Which Is An Old Method We Can Use A Fat Arrow Function Which Is Smart Enough To Know What We Want To Do. So Use Fat Arrow Function Instead Of bind(this).
+
+
+Props Are Like Properties To State, Whatever We Pass To A Prop It Shows On Our Main Page Or Whereever We Want To Show It. 
+
+Children Is Another Great Addition To Props, It Adds More Functionality And We Can Add As Many Tags Like Heading, Paragraphs, Divs etc As We Want.

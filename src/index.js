@@ -48,7 +48,15 @@ render(){
 
      <div>
       <Header />
-      <NewsList news ={this.state.news} />
+      <NewsList news ={this.state.news} >
+        <h3>
+          Hello React:
+        </h3>
+        <p>
+          React Is A Wonderful Technology, The Best Frontend Framework.
+        </p>
+
+        </NewsList>
     </div>
 
     )

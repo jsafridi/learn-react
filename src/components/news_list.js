@@ -26,6 +26,8 @@ const NewsList = (props) =>{
 // Creating A Div With Items For Our Map Function
 
     <div>
+    {/* Working On Prop Children     */}
+    {props.children}
         {items}
     </div>
     )
