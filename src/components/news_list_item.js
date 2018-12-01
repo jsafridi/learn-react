@@ -44,7 +44,7 @@ const NewsItem =({item}) => {
 
  // The Above Two Variables news_item And news_background Were Created To Style  Our App It Gives A Padding Of 20 Pixels Border-Boxing And Solid Grey Border Line And The Second Variable Gives Our App A Light Green Background. We Just Pass Two Classes Kind Of Things To Our Div, The One We Want To Styalize Like {...news_item} And {...news_background}. This Is Pure ES6 Formate And Doesn't Do Anything With React.
 
-
+// First We Had A Div Like This        <div {...news_item} {...news_background}> Which We Change To The One Below Because We Want To Use ClassName Propery.
     return(
     <div className={`${news_item} ${news_background}`}>
 
