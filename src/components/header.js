@@ -70,8 +70,9 @@ const Header = (props) => {
 
 // Now I Am Going To Change The inputChangeHandler To this.props.keywords, It Will Grab The Data From The Keywords Function Defined In Index.js
 
-// Since We Don't Need this Because We Are Not Using Class Based Components So I Am Going To Type It Again Without This.
 //onChange = {this.props.keywords}
+
+// Since We Don't Need this Because We Are Not Using Class Based Components So I Am Going To Type It Again Without This.
 
 // onChange Without this Keyword.
 onChange={props.keywords}
