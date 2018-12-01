@@ -5,40 +5,56 @@
 // Destructuring And Creating Classes.
 // Pure ES6 Style Conding.
 
-import React,{ Component } from 'react';
+//import React,{ Component } from 'react';
+
+// Now We Are Introducing A More Concise And Less Coding Model Functional Component And Will Make Some Changes Which Will Reduce Our Code.
 
 
+// First I Removed The {Component} Because We Are Not Using Class Based Components
+
+import React from 'react';
 
 // Importing CSS
 import '../css/styles.css';
 
 //Creating Header Class
 
-class Header extends Component{
+//class Header extends Component{
 
-// Creating State
-    state = {
-        Message:'I Love React.'
-    }
+// Instead Of Class Header I Am Going To Change It To A Functional Component
+const Header = (props) => {
 
-//Event Handlers
+// Commenting Out From Creating State To Render Because We Don't Need Them For Functional Base Components Meaning Less Code.
 
-inputChangeHandler = (event) => {
-   // console.log(event.target.value)
-   this.setState({
-       Message: event.target.value
-   });
-}
+// // Creating State
 
-//Render Method Which Is Mendatory
+// // Commenting Out The State As We Don't Need It For Functional Components.
+//   state = {
+//         Message:'I Love React.'
+//      }
+// //Event Handlers
 
-    render(){
+// inputChangeHandler = (event) => {
+//     console.log(event.target.value)
+   
+   
+   
+//    // Here Event Is Typing Something In The Input And The Target Is Html Input Tag While Whatever We Type In The Input Is The Value So It Basically Record Anything We Type In The Input And Display It Wherever We Want To See.
 
-// Consoling The Result
+//    this.setState({
+//        keywords: event.target.value
+//   });
+// }
 
-//console.log(this.state.Message)
+// //Render Method Which Is Mendatory
 
-// Old Return Method With A Base Tag And Children Logo And Input Divs
+//     render(){
+
+//  Consoling The Result
+
+// console.log(this.state.keywords)
+
+//  Old Return Method With A Base Tag And Children Logo And Input Divs
 
         return (
             
@@ -50,12 +66,20 @@ inputChangeHandler = (event) => {
 
 // Changing The Old OnChange Event Handler To New State Pure React.  
               
-                onChange = {this.inputChangeHandler}
+//onChange = {this.inputChangeHandler}
+
+// Now I Am Going To Change The inputChangeHandler To this.props.keywords, It Will Grab The Data From The Keywords Function Defined In Index.js
+
+// Since We Don't Need this Because We Are Not Using Class Based Components So I Am Going To Type It Again Without This.
+//onChange = {this.props.keywords}
+
+// onChange Without this Keyword.
+onChange={props.keywords}
                 />
                 </div>
             </header>
         )
     }
-}
+
 
 export default Header;

@@ -34,6 +34,11 @@ import NewsList from './components/news_list';
     state = {
       news:JSON
     }
+  // Creating A New Fat Arrow Function Which Will Filter Through Props (Data) And Filter Out The Keywords We Type And Display It On Our Desired Location On Our App....
+  
+  getKeyword = ()=>{
+    console.log('Hellow React!!!')
+  }
 render(){
 
   return (
@@ -46,8 +51,10 @@ render(){
 
     //Creating New Component Which Is Header For Our News Application.
 
-     <div>
-      <Header />
+    
+// Pass The keywords As A Prop TO Header Tag Which Will Get Data From getKeyword Function.
+     <div>   
+      <Header  keywords = {this.getKeyword}/>
       <NewsList news ={this.state.news} >
         <h3>
           Hello React:
