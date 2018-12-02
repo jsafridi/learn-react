@@ -32,15 +32,42 @@ import NewsList from './components/news_list';
 
 
     state = {
-      news:JSON
+      news:JSON,
+
+
+    // Creating An Empty Array To Store The User Inputs And Match With The Titles Of Our News App  
+
+    filtered:[]
+
     }
   // Creating A New Fat Arrow Function Which Will Filter Through Props (Data) And Filter Out The Keywords We Type And Display It On Our Desired Location On Our App....
   
-  getKeyword = ()=>{
-    console.log('Hellow React!!!')
+  getKeyword = (event)=>{
+
+  // Since We Don't Need Console.log I Am Going To Comment It Out
+
+   //console.log('Hellow React!!!')
+
+  // Creating Two Variables One For The Keywords A User Inputs To Search Something And The Other To Filter All The News And Match It With The User Inputed Keywords.
+  
+  let keyword = event.target.value;
+  let filtered = this.state.news.filter((item) =>{
+    return item.title.indexOf(keyword) > -1
+    });
+  
+   // Setting The State To Get The Filtered Data Which We Have Stored In The Empty Array filtered
+   
+    this.setState({
+      filtered
+    })
   }
+
 render(){
 
+//Creating Two New Variables
+
+ let newsFiltered = this.state.filtered;
+ let newsWhole = this.state.news 
   return (
  
   
@@ -51,17 +78,17 @@ render(){
 
     //Creating New Component Which Is Header For Our News Application.
 
-    
+
 // Pass The keywords As A Prop TO Header Tag Which Will Get Data From getKeyword Function.
      <div>   
-      <Header  keywords = {this.getKeyword}/>
-      <NewsList news ={this.state.news} >
-        <h3>
+     <Header  keywords = {this.getKeyword}/>
+    <NewsList news ={newsFiltered.length === 0 ? newsWhole : newsFiltered} >
+       {/* <h3>
           Hello React:
         </h3>
         <p>
           React Is A Wonderful Technology, The Best Frontend Framework.
-        </p>
+        </p> */}
 
         </NewsList>
     </div>
